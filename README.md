@@ -1,2 +1,2 @@
-# elite
+# hips
 online store
