@@ -344,7 +344,7 @@ template {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #fff;
+  background-color: #da1414;
 }
 
 img {
@@ -371,6 +371,8 @@ img {
 
 .navbar {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 10;
   -webkit-box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.05);
@@ -446,6 +448,7 @@ img {
 .logo {
   display: block;
   font-size: 52px;
+  color: #183B56;
 }
 
 .burger {
@@ -461,6 +464,14 @@ img {
   opacity: 0;
 }
 
+body {
+  background-color: #4e9085;
+}
+
+.hero {
+  margin-top: 104px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 950px;
@@ -468,6 +479,9 @@ img {
 }
 
 @media (max-width: 992px) {
+  .lock {
+    overflow: hidden;
+  }
   .container {
     max-width: 704px;
   }
@@ -589,6 +603,15 @@ img {
   .container {
     max-width: 570px;
   }
+  .header-wrapp {
+    padding: 11px 0 11px 0;
+  }
+  .menu {
+    top: 14px;
+  }
+  .menu__active {
+    top: 20px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -597,9 +620,10 @@ img {
     min-width: 272px;
   }
   .menu {
-    width: 101%;
+    width: 105%;
     left: 0;
     right: 0;
+    margin-left: -3%;
   }
   .logo {
     margin-left: 2px;
