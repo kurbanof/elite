@@ -485,6 +485,7 @@ img {
 }
 
 .menu {
+  background-color: #fff;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -703,7 +704,7 @@ img {
             box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.1);
     -webkit-transition: .3s;
     transition: .3s;
-    top: 28px;
+    top: 8px;
     right: -12px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -711,7 +712,7 @@ img {
     padding: 36px 24px;
   }
   .menu__active {
-    top: 34px;
+    top: 14px;
     position: absolute;
     visibility: visible;
     opacity: 1;
@@ -773,8 +774,8 @@ img {
     top: 20px;
   }
   .hero {
-    padding: 42px 0 36px 25px;
-    background-size: 380px 100%;
+    padding: 340px 0 36px 25px;
+    background-size: 439px 100%;
     background-position: 101% 1%;
   }
   .hero__container {
