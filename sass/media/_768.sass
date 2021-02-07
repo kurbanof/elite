@@ -10,16 +10,37 @@
     &__active
       top: 14px
 
-
-
   .hero
-    padding: 340px 0 36px 25px
-    background-size: 439px 100%
+    margin-top: 100px
+    position: relative
+    padding: 0px 0 36px 25px
+    background-size: 508px 95%
     background-position: 101% 1%
-    // background-image: linear-gradient(180deg, #ffffff, #737373)
+    // background-size: auto 66%
+    // background-position: center -1%
+    &:after
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: linear-gradient(216deg, rgba(238, 238, 238, 0.0001) 42.32%, #e8eae9 66.51%)
+      // background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 51.32%, #e8eae9 70.51%)
+
+    &__hashtag
+      max-width: 172px
+    &__btn
+      max-width: 233px
 
     &__container
+      position: relative
+      z-index: 1
+      padding-top: 381px
       margin-left: 0
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
     &__hashtag
       margin-bottom: 24px
     &__title
@@ -35,3 +56,13 @@
       line-height: 28px
     &__btn
       margin-bottom: 22px
+  .info
+    flex-wrap: wrap
+    max-width: 242px
+    &__tab
+      &_1
+        margin-top: 12px
+      &_2
+        order: -2
+      &_3
+        order: -1
