@@ -1,7 +1,7 @@
 @media (max-width: 767px)
   .container
     max-width: 570px
-
+  //////=== header ===//////
   .header
     &-wrapp
       padding: 11px 0 11px 0
@@ -10,14 +10,13 @@
     &__active
       top: 14px
 
+  //////=== hero ===//////
   .hero
     margin-top: 100px
     position: relative
     padding: 0px 0 36px 25px
     background-size: 508px 95%
     background-position: 101% 1%
-    // background-size: auto 66%
-    // background-position: center -1%
     &:after
       content: ""
       position: absolute
@@ -26,7 +25,6 @@
       width: 100%
       height: 100%
       background: linear-gradient(216deg, rgba(238, 238, 238, 0.0001) 42.32%, #e8eae9 66.51%)
-      // background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 51.32%, #e8eae9 70.51%)
 
     &__hashtag
       max-width: 172px
@@ -66,3 +64,35 @@
         order: -2
       &_3
         order: -1
+
+  //////=== collection ===//////
+  .collection
+    &-wrap
+      padding: 80px 0px
+      flex-direction: column
+    &__main
+      max-width: 100%
+    &__title
+      margin-bottom: 18px
+      font-size: 28px
+      line-height: 36px
+    &__text
+      margin-bottom: 30px
+      font-size: 16px
+      line-height: 28px
+    &__check
+      font-size: 16px
+      line-height: 22px
+    &__arrow
+      margin-left: 20px
+      vertical-align: middle
+  .winter
+    margin-bottom: 40px
+    &__person
+      width: 340px
+      height: 490px
+    &__bridges
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      width: 334px
