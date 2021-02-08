@@ -598,7 +598,7 @@ img {
 }
 
 .collection-wrap {
-  padding: 120px 20px 145px 0;
+  padding: 120px 0 145px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -679,6 +679,16 @@ img {
   }
   .container {
     max-width: 950px;
+  }
+  .collection-wrap {
+    padding-right: 0;
+  }
+  .collection__main {
+    max-width: 326px;
+  }
+  .collection__text {
+    font-size: 19px;
+    line-height: 33px;
   }
   .winter__person {
     width: 280px;
