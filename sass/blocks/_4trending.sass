@@ -25,9 +25,11 @@
         font-weight: bold
   &-content
     &__item
-      display: flex
       flex-wrap: wrap
       justify-content: space-between
+      display: none
+      &_active
+        display: flex
 
 .card
   display: flex
@@ -61,6 +63,7 @@
     &__icon
       width: 23px
       height: 21px
+      cursor: pointer
   &-add
 
     &__wrap
@@ -77,6 +80,7 @@
       width: 25px
       height: 25px
       margin-bottom: 25px
+      cursor: pointer
     &__text
       font-size: 24px
       line-height: 32px
