@@ -40,6 +40,7 @@
     border-radius: 8px
     border: 1px solid #00000038
     margin-bottom: 20px
+    @include shadow
     &_rotate
       transform: matrix(-1, 0, 0, 1, 0, 0)
   &__text
@@ -66,18 +67,19 @@
       display: flex
       flex-direction: column
       align-items: center
-      justify-content: space-between
+      justify-content: center
       width: 100%
       height: 350px
-      padding: 120px 74px 104px
       border-radius: 8px
       background-color: $blue
+      @include shadow
     &__icon
       width: 25px
       height: 25px
+      margin-bottom: 25px
     &__text
       font-size: 24px
       line-height: 32px
       text-align: center
+      max-width: 119px
       color: $white
-

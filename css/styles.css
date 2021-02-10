@@ -507,6 +507,8 @@ img {
   background-repeat: no-repeat;
   background-position: 96% 1%;
   background-size: contain;
+  -webkit-box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.05);
 }
 
 .hero__hashtag {
@@ -647,6 +649,8 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   margin-right: 30px;
+  -webkit-box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.05);
 }
 
 .winter__bridges {
@@ -669,6 +673,8 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
+  -webkit-box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.05);
 }
 
 .trending-wrap {
@@ -748,6 +754,8 @@ img {
   border-radius: 8px;
   border: 1px solid #00000038;
   margin-bottom: 20px;
+  -webkit-box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.05);
 }
 
 .card__img_rotate {
@@ -798,25 +806,28 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: 350px;
-  padding: 120px 74px 104px;
   border-radius: 8px;
   background-color: #1565D8;
+  -webkit-box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.05);
 }
 
 .card-add__icon {
   width: 25px;
   height: 25px;
+  margin-bottom: 25px;
 }
 
 .card-add__text {
   font-size: 24px;
   line-height: 32px;
   text-align: center;
+  max-width: 119px;
   color: #ffffff;
 }
 
@@ -855,6 +866,12 @@ img {
             flex-direction: column;
     width: 222px;
     margin-bottom: 32px;
+  }
+  .card__img {
+    height: 310px;
+  }
+  .card-add__wrap {
+    height: 310px;
   }
 }
 
@@ -1047,6 +1064,44 @@ img {
             justify-content: space-between;
     width: 334px;
   }
+  .trending-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .trending-top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 56px;
+  }
+  .trending__title {
+    margin-bottom: 28px;
+  }
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 325px;
+    margin-bottom: 32px;
+  }
+  .card__img {
+    height: 380px;
+  }
+  .card-add__wrap {
+    height: 380px;
+    width: 325px;
+  }
 }
 
 @media (max-width: 840px) {
@@ -1194,6 +1249,37 @@ img {
             justify-content: space-between;
     width: 334px;
   }
+  .trending-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .trending-top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 56px;
+  }
+  .trending__title {
+    margin-bottom: 28px;
+  }
+  .card {
+    width: 265px;
+    margin-bottom: 32px;
+  }
+  .card__img {
+    height: 350px;
+  }
+  .card-add__wrap {
+    height: 350px;
+    width: 265px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1239,6 +1325,54 @@ img {
   .winter__bridge {
     width: 48%;
     height: 175px;
+  }
+  .trending-top {
+    margin-bottom: 36px;
+  }
+  .trending__title {
+    margin-bottom: 24px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .tabs-trigger {
+    width: 290px;
+  }
+  .tabs-trigger__item {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .card {
+    width: 48%;
+    margin-bottom: 32px;
+  }
+  .card__img {
+    height: 67%;
+  }
+  .card__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .card-add__wrap {
+    height: 67%;
+    width: 100%;
+  }
+  .card-add__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .card-price {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .card-price__tag {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .card-price__icon {
+    width: 14px;
+    height: 14px;
+    margin-left: 9px;
   }
 }
 
