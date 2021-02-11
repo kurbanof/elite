@@ -1349,7 +1349,7 @@ img {
   }
   .card {
     width: 48%;
-    margin-bottom: 32px;
+    margin-bottom: 0px;
   }
   .card__img {
     height: 67%;
