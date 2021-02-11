@@ -29,3 +29,22 @@ document.querySelectorAll('.tabs-trigger__item').forEach((item) =>
 );
 
 document.querySelector('.tabs-trigger__item').click();
+
+  // swiper-slider
+const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  loop: true,
+
+  keyboard: {
+    enabled: true,
+  },
+  // autoplay: {
+  //   delay: 1500,
+  // },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
