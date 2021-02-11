@@ -24,12 +24,24 @@
       &_active
         font-weight: bold
   &-content
+    position: relative
     &__item
+      position: relative
       flex-wrap: wrap
       justify-content: space-between
-      display: none
+      display: flex
+      visibility: hidden
+      opacity: 0
+      top: 70px
+      transition: .3s
+      &_2
+        position: absolute
+      &_3
+        position: absolute
       &_active
-        display: flex
+        top: 0
+        visibility: visible
+        opacity: 1
 
 .card
   display: flex
