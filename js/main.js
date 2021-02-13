@@ -30,8 +30,8 @@ document.querySelectorAll('.tabs-trigger__item').forEach((item) =>
 
 document.querySelector('.tabs-trigger__item').click();
 
-  // swiper-slider
-const swiper = new Swiper('.swiper-container', {
+// swiper-slider for feedback section
+const swiper = new Swiper('.feedback__swiper-container', {
   // Optional parameters
   loop: true,
 
@@ -48,3 +48,29 @@ const swiper = new Swiper('.swiper-container', {
     clickable: true,
   },
 });
+
+// swiper-slider for story
+const storySwiper = new Swiper('.story__swiper-container', {
+  loop: true,
+
+  keyboard: {
+    enabled: true,
+  },
+
+
+  // autoplay: {
+  //   delay: 1500,
+  // },
+
+  // effect: 'coverflow',
+
+
+
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.button-next',
+    prevEl: '.button-prev',
+  },
+});
+
