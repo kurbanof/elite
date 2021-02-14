@@ -1,0 +1,65 @@
+.newsletter
+  position: relative
+  background-color: $blue
+  background-image: url(../img/Oval.svg)
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: 100% 1%
+  background-size: contain
+  &::after
+    position: absolute
+    content: url(../img/1Oval.svg)
+    top: 0
+    left: 0
+  &-wrap
+    padding: 100px 0
+    display: flex
+    align-items: center
+
+  &-info
+    max-width: 486px
+    margin-right: 144px
+  &__title
+    color: $white
+    margin-bottom: 16px
+  &__text
+    font-size: 18px
+    line-height: 32px
+    color: $white
+
+.subscribe
+  position: relative
+  &__input
+    cursor: pointer
+    width: 447px
+    height: 54px
+    padding: 0 145px 0 48px
+    border-radius: 8px
+    color: #959EAD
+    outline: none
+    border: none
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+  &__button
+    cursor: pointer
+    position: absolute
+    top: 4px
+    right: 4px
+    padding: 11px 24px
+    background-color: $primary
+    color: $white
+    outline: none
+    border: none
+    border-radius: 8px
+    font-family: Open Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+  &__icon
+    position: absolute
+    top: 21px
+    left: 20px

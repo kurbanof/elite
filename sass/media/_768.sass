@@ -107,10 +107,10 @@
       display: flex
       flex-direction: column
     &-top
-      flex-wrap: wrap
-      justify-content: center
+      display: block
       margin-bottom: 56px
     &__title
+      text-align: center
       margin-bottom: 28px
 
   .card
@@ -123,6 +123,8 @@
         height: 350px
         width: 265px
   .tabs
+    &-trigger
+      margin: auto
     &-content
       &__item
         top: 40px
@@ -145,3 +147,24 @@
       &__title
         font-size: 20px
         line-height: 24px
+
+  //////=== story ===//////
+
+  .footer
+    &-wrapper
+      // padding: 64px 0 64px 0
+    &-grid
+      grid-template: repeat(2, 1fr) 23% / repeat(3, 1fr)
+      grid-gap: 48px 30px
+      &__logo
+        grid-area: 3 / 1 / 4 / 4
+
+      &__product
+        margin-left: 0
+      &__company
+        grid-area: 2/1
+        margin-left: 0
+      &__services
+        grid-area: 1/2
+      &__more
+        grid-area: 2/2
